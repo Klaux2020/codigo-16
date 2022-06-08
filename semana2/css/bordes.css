@@ -1,0 +1,107 @@
+/*Usae un selector de etiqueta(tag) */
+html {
+    font-size: 10px;
+}
+
+body {
+    margin-left: 40px;
+    margin-right: 40px;
+    font-size: 20px;
+}
+
+h1{
+    font-size: 2em; /* 2. 20px (body) = 40 px */
+    font-size: 2rem;/* 2 x 10px (html:raiz)*/
+}
+
+p {
+ 
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.small {
+  font-size: 0.6em;  /* 0.6 x 20px = 12px */
+}
+
+/* Desde aqui quiro usar selectores de clase (class)*/
+.solid {
+    border-style: solid;
+    border-color: brown;
+    border-width: 5px;
+   
+}
+
+
+.dashed {
+    border-style: dashed;
+    border-color: green;
+    border-width: 2px;
+   
+}
+
+#bnuevo:hover {
+    color: blue;
+    border-style: initial;
+}
+
+.dotted {
+    /* border_abrevia 3 propiedades en una*/
+     /* los 3 valores van en cualquier orden*/
+ 
+    border: 3px  dotted blue;
+     }
+
+.double {
+    border-style: double;
+    border-color: pink;
+    border-width: 2px;
+}
+
+.groove {
+    border-style: groove;
+    border-color: grey;
+    border-width: 2px;
+}
+
+.ridge {
+    border-style: ridge;
+    border-color: blue;
+    border-width: 2px;
+}
+
+.inset {
+    border-style: inset;
+    border-color: green;
+    border-width: 2px;
+}
+
+.outset {
+    border-style: outset;
+    border-color: blue;
+    border-width: 2px;
+}
+ 
+.left_solid {
+    border-left: solid red 2px;
+}
+.ridge-dotted {
+border-right: dotted pink 3px;
+
+}
+
+.top-dashed {
+    border-top: dashed 2px grey;
+}
+
+.botton-double {
+    border-bottom: double 3px red;
+}
+
+.mix-left-top {
+    border-style: solid none none dotted;
+    border-width: 1px 0px 0px 1px;
+    border-color: black red red blue ;
+}
+

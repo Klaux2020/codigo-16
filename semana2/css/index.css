@@ -1,0 +1,134 @@
+h1 {
+    /*font-family*/
+    /*que pasa si una fuente no existe*/
+    /*en css tenemos la opcion de poner varios tipo de letras*/
+    /*para que si la primera no existe busca en la segunda y asi consecutiva*/
+    font-family: "Jost";
+    font-size: 45px;
+    text-decoration: underline;
+    background-color: #0ba;
+    /*Font.weight tambien puede recibir numeros
+    iran de 100 a 900 */
+    /*! Importanta al poner un peso en font.weight no hay que poner unidades de medida*/
+
+    font-weight: 100;
+    /* text-decoration*/
+    text-decoration: underline;
+    
+    /* * Nota:
+       * 700 = bold
+       * 900 = bolder
+    */
+
+  
+
+}
+
+.parrafo{
+    font-family: "Dank Mono",monospace;
+    /*font-size sirve para manejar el tamaño del texto*/
+    font-size: 32px;
+    font-weight: bold;
+}
+/* un poco de teoria de colores */
+/*
+Hexadecimal
+RGB =>  Red Green Blue
+RGBA=>  Red Greeb Blue Alpha
+Alpha=> Opacidad 0 - 1
+hsl => Hue Saturation Lightness
+*/
+
+.link-a{
+
+    font-size: 32px;
+    font-family: "Play";
+    /* Al poner nono en una propiedad estamos  invalidandola*/
+    text-decoration: none;
+    /*Con la propieda color: sirve para poder cambiar el color de un texto */
+   /* Hexadecimal: Es una forma en la cual  podemos aplicar un color basado en 6 digitos
+    alfanumericos */
+
+ color: rgb(53, 146, 239)   
+}
+
+body{
+    font-family: Arial,Helvetica,sans-serif;
+
+}
+
+ul{
+    background-color:  rgba(53, 146,239, 0.3)   ;
+
+}
+
+.span-1 {
+    text-decoration: line-through;
+    text-transform: capitalize;
+  
+}
+
+.span-2 {
+    text-decoration: overline;
+  
+}
+
+.span-3 {
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+
+.span-4 {
+    text-decoration: line-through;
+    text-decoration-color: #f01; 
+}
+
+.span-5 {
+    text-decoration: overline;
+    background-color: #0ba;
+    text-decoration-color: #fff;
+}
+/*
+
+lowercase => Minusculas
+uppercase => Mayusculas
+capitalize => Mayusculas en la primera letra
+
+*/
+.span-6 {
+
+  color: #fff;
+  text-decoration: underline;
+  background-color: rgb(252,90,255);
+  text-decoration-color: rgb(255,183,0);
+
+  /* Estamos indicando que el texto sea en minusculas*/
+   text-transform: lowercase
+}
+
+/*Para que Css puede leer una fuente desde un archivo
+tenemos que  @font-face esta nos permite cargar una fuente externa y darle
+un nombre para su uso*/
+
+/*El font-family en este caso puede ser cualquier nombre
+es una buena practica nombarlo por su nombre oficial */
+
+ @font-face {
+    /* En este caso font-family es el nombre de la fuenta */
+    font-family: "Righteous-Regular";
+    /* src => Es el lugar donde esta alojado la fuente */
+    src: url("../fonts/Righteous-Regular.ttf");
+  }
+  
+  @font-face {
+    font-family: "NanumMyeongjo-Bold";
+    src: url("../fonts/NanumMyeongjo-Bold.ttf");
+  }
+  
+  .title-2 {
+    font-family: "Righteous-Regular";
+  }
+  
+  .parrafo-2 {
+    font-family: "NanumMyeongjo-Bold";
+  }
