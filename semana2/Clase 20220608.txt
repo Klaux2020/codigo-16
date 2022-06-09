@@ -1,0 +1,22 @@
+El font-size de un navegado por default es tamaño de fuente 16px
+
+16=1em 
+
+El valor puede cambiar si es que alteramos el
+font-size del body
+
+1em=18px 
+body{font-size:18px<
+
+rem se basa en el font-size del htmle que es
+nuestro root(principal)
+
+16px=> 1rem
+
+html{font-size:20px
+
+1rem=20px 
+2rem=40px
+
+
+
