@@ -1,0 +1,87 @@
+.bg-box {
+    height: 400px;
+    width: 400px;
+    background-color:  red;
+    /*para mover este elemento por todo el navegador*/
+    position: relative;
+    /*al agregar un position a un elemento este no da la opcion
+    de usa lo siguiente
+    top
+    left
+    rigth
+    botton*/
+    top: 100px;
+    /*left: 100px;*/
+    right: 100px;
+    /*Esta la opcion de combinar absolute con 
+    relative*/
+    /*Absolute necesta de un padre que defina
+    su entorno es decir ancho y alto*/
+    /*por ende relative va a funciona como
+    padre de absolute*/
+}
+.padre {
+width: 500px;
+height: 500px;
+background-color: aqua;
+position: relative;
+
+}
+
+.hijo {
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    position: absolute;
+   /* right: 0; */
+   /* bottom: 0;*/
+    top: calc(50% - 50px);
+    left: calc(50%-50px);
+}
+
+/* la clase bandera que es el contenerdor ocupe toda la pantalla*/
+/* vh: viewport heiht es una unidad de medida el rango va de 0
+   al infinito */
+/* sin embargo 100vh * al alto de la pantalla*
+/* si ponemos que un div valga 200vh -> a que el
+    div ocupe basicamente el alto de 2 pantallas*/
+    /*ojo: vh es solo de forma vertical*/
+.bandera {
+    height: 100vh ;
+    border: solid;
+     /* vamos a poner un position relative en este div */
+    position: relative;
+}
+
+.green {
+    height: 100vh;
+    background-color: green;
+    width: 40%;
+    float: left;
+    
+}
+
+.red {
+    height: 100vh;
+    background-color: red;
+    width: 60%;
+    float: right;
+}
+/* Nota : sabemos que la foto mide 180px x 180px*/
+/* El cuadrado que la contiene mide 200px x 200px*/
+/* para que la foto crezca  */
+
+.escudo {
+
+    background: url(../images/escudo_portugal.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    top: calc(50% - 100px);
+    left: calc(40% - 100px);
+    
+   
+
+}
