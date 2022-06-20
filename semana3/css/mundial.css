@@ -1,7 +1,8 @@
+/*Global*/
 body {
     margin: 0;
     padding: 0;
-    font-family:  Arial, Helvetica;
+    font-family:  Arial,Helvetica;
 }
 
 /*Header*/
@@ -10,31 +11,36 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 20px 50px;
-    box-shadow: 0 1px 8px #ddd;
+    box-shadow: 0 1px 8px #666;
+    background-color: rgb(124, 124,124);
 }
 
 h1 {
-font-size: 1.5em;
+   
+    font-size: 1.5em ;
 }
 
 header ul {
     list-style: none;
     display: flex;
     justify-content: space-between;
-    gap: 2rem
-    padding: 0 20px;
+    gap: 2rem;  /* gap brinda espacio entre sus elementos un padre flex*/
+    padding:  0 20px;
 }
+
 
 header a {
-text-decoration: none;
-color: #555;
-transition: all 0.3s ease 0s;
-}
-
-header a:hover ^{
-    color: #b2dfdb;
+    text-decoration: none;
+    color: #fff;
     transition: all 0.3s;
-}
+    }
+
+
+header a:hover {
+        color: #b2dfdb;
+        transition: all 0.5s;
+    }
+
 
 /*DROPDOWN: Menu despeglabe*/
 
@@ -42,21 +48,39 @@ header a:hover ^{
     display: block;
 }
 
+/*El menu escondido*/
 .dropdown-content {
     display: none;    
     position: absolute;
     background-color: #f1f1f1;
     width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
     z-index: 1;
 }
 
-.dropdown-content > li {
+/* Cada elemento del menu escondido */
+.dropdown-content  li {
     display: block ;
     padding: 20px;
-   
+}
+/*Las anclas que esten dentro de cada elemento del menu escondido*/
+.dropdown-content  li  a {
+    text-decoration: none;
+    color:#666
+}
+.dropdown-content  li > a:hover {
+    text-decoration: underline;
+    color: #333;
 }
 
+/*Cuando el curso esta por encima de dropdown (padre)*/
+/*aplicar solo dropdown-content(menu) los estilos;*/
 .dropdown:hover .dropdown-content {
     display: block;
+} 
+
+/*Cuando el curso esta por encima de dropdown (padre)*/
+/*aplicar solo dropdown-button(menu) los estilos;*/
+.dropdown:hover  .dropdown-button {
+    text-decoration: underline;
 }
