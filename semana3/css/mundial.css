@@ -56,19 +56,20 @@ header a:hover {
     width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
     z-index: 1;
+    margin-left: -10%;
 }
 
 /* Cada elemento del menu escondido */
 .dropdown-content  li {
     display: block ;
-    padding: 20px;
+    padding: 20px 10px;
 }
 /*Las anclas que esten dentro de cada elemento del menu escondido*/
 .dropdown-content  li  a {
     text-decoration: none;
     color:#666
 }
-.dropdown-content  li > a:hover {
+.dropdown-content  li  a:hover {
     text-decoration: underline;
     color: #333;
 }
@@ -124,13 +125,25 @@ header a:hover {
         align-items: flex-start;
         justify-content: flex-start;
         height: 100vh;
-        width: 45%;
+        width: 15%;
+        padding: 20px;
+    }
+    /* Permite Ampliar el Menu cuando pasa el Mouse por encima de la opcion a elegir del menu*/
+    header:hover {
+        width: 20%;
+        padding: 20px 50px;
+        transition: all 1s;
     }
 
     header ul {
         margin-top: 20px;
         flex-direction: column;
         padding: 0;
+    }
+
+    .dropdown-content {
+        margin-top: 0px;
+        margin-left: 40px;
     }
 
 }
