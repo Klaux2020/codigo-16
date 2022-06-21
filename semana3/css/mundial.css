@@ -12,7 +12,7 @@ header {
     align-items: center;
     padding: 20px 50px;
     box-shadow: 0 1px 8px #666;
-    background-color: rgb(124, 124,124);
+    background-color: #c9c9c9;
 }
 
 h1 {
@@ -83,4 +83,68 @@ header a:hover {
 /*aplicar solo dropdown-button(menu) los estilos;*/
 .dropdown:hover  .dropdown-button {
     text-decoration: underline;
+}
+
+/* Extra small devices (phones, 600px and down) */
+/*@media only screen and (max-width: 600px) {
+    /*adentro podermos ejecutar ciertos estilos*/
+
+/*    header {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        height: 100vh;
+        width: 45%;
+    }
+
+    header ul {
+        margin-top: 20px;
+        flex-direction: column;
+        padding: 0;
+    }
+
+  
+
+}*/
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/*@media only screen and (min-width: 600px) {
+    body {
+        background-color: green
+    }
+}*/
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 992px) {
+   
+     /*adentro podermos ejecutar ciertos estilos*/
+
+     header {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        height: 100vh;
+        width: 45%;
+    }
+
+    header ul {
+        margin-top: 20px;
+        flex-direction: column;
+        padding: 0;
+    }
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+/* @media only screen and (min-width: 992px) {
+    body {
+        background-color: purple
+    }
+} */
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    body {
+        background-color: black
+    }
 }
