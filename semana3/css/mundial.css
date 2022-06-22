@@ -86,6 +86,68 @@ header a:hover {
     text-decoration: underline;
 }
 
+
+/* Main */
+
+main {
+    width: 100%;
+}
+
+#container {
+    margin: 50px auto;
+    width: 50%;
+}
+
+#container h2 {
+    margin-bottom: 10px;
+    color: var(--primer-color)
+}
+
+.table {
+  box-shadow: 10px 10px 20px #ccc;
+  border-radius: 10px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+     }
+
+.row > div {
+    width: 25%;
+    text-align: center;
+}
+
+.th {
+    
+    background-color: #333;
+    color: white;
+    font-weight: bolder;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    font-size: var(--texto-grande);
+}
+
+.tr {
+    background-color: var(--primer-color);
+    border-bottom: 1px #666 dashed;
+    font-size: var(--texto-mediano);
+}
+
+/*Clase : Permite tener acceso a uno o varios de sus hijos impar al cual podemos efectuar algun cambio*/
+/*even = par*/
+/*odd = impar*/
+.tr:nth-child(even) {
+    background-color: var(--segundo-color);
+    font-size: var(--texto-pequeno);
+} 
+
+.tr:last-child {
+    border-bottom: 1px #666 solid;
+    border-radius: 0 0 10px 10px;
+}
+
 /* Extra small devices (phones, 600px and down) */
 /*@media only screen and (max-width: 600px) {
     /*adentro podermos ejecutar ciertos estilos*/
@@ -118,7 +180,11 @@ header a:hover {
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (max-width: 992px) {
    
-     /*adentro podermos ejecutar ciertos estilos*/
+    #page {
+        display: flex;
+    }
+
+    /*adentro podermos ejecutar ciertos estilos*/
 
      header {
         flex-direction: column;
@@ -158,6 +224,6 @@ header a:hover {
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
     body {
-        background-color: black
+        background-color: #ffff
     }
 }
